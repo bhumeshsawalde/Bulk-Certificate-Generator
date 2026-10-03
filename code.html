@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#d5e3fc", "on-error": "#ffffff", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "tertiary-container": "#bc4800", "on-surface-variant": "#434655", "secondary-container": "#d5e3fc", "primary-fixed-dim": "#b4c5ff", "surface-container-highest": "#dae2fd", "on-secondary": "#ffffff", "on-secondary-container": "#57657a", "inverse-primary": "#b4c5ff", "on-primary-fixed": "#00174b", "on-secondary-fixed-variant": "#3a485b", "surface-bright": "#faf8ff", "on-background": "#131b2e", "surface-tint": "#0053db", "inverse-on-surface": "#eef0ff", "primary": "#004ac6", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#003ea8", "on-tertiary-fixed-variant": "#7d2d00", "surface-container": "#eaedff", "primary-container": "#2563eb", "background": "#faf8ff", "surface-container-lowest": "#ffffff", "surface-variant": "#dae2fd", "on-surface": "#131b2e", "on-error-container": "#93000a", "primary-fixed": "#dbe1ff", "secondary-fixed-dim": "#b9c7df", "on-tertiary-fixed": "#360f00", "outline-variant": "#c3c6d7", "tertiary": "#943700", "on-tertiary-container": "#ffede6", "error": "#ba1a1a", "tertiary-fixed-dim": "#ffb596", "secondary": "#515f74", "surface": "#faf8ff", "on-secondary-fixed": "#0d1c2e", "inverse-surface": "#283044", "outline": "#737686", "error-container": "#ffdad6", "surface-container-high": "#e2e7ff", "surface-dim": "#d2d9f4", "tertiary-fixed": "#ffdbcd", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "2rem", "gutter-sm": "1rem", "margin-sm": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-xl": "2rem", "space-sm": "0.5rem" }, fontFamily: { "label-md": ["Inter"], "headline-sm": ["Inter"], "headline-xl": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface rounded-lg hover:bg-surface-container transition-colors shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Bulk Certificate Generator Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmMY131GL8yh7YLYQWM2cAwo6WQ-rFn7ktHxqgxLH_e1hew0LdqQ0a1FspswMZ0a38Ne8VaC-chJP6H-4k4OWS2wwWxbjRUa6S-pOlHwOe3IssfjTw-3qyqOrmZimzIPUseDvycGaIbpQUfkP303vArD5Pyuj1FhLTXmhXEIexouOHrS8dKFCm8AMaLInZ3BFB-aUvUxFRAZGcq1nreAPl28RhL_valNV4nXuLs3R2DAApRVb9mwAN"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Batch Details</h1></div><div class="flex items-center gap-space-xs shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 pb-safe px-gutter-sm bg-surface flex flex-col"><div class="flex flex-col w-full pb-8">
+<div class="w-full flex items-center justify-between py-space-sm px-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<div class="w-6 h-0.5 bg-primary rounded-full"></div>
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<div class="w-6 h-0.5 bg-primary rounded-full"></div>
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<div class="w-6 h-0.5 bg-primary rounded-full"></div>
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm shadow-sm ring-4 ring-primary-fixed">
+        4
+      </span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-full">
+      Step 4 of 4
+    </span>
+</div>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Batch Processing</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Annual Symposium 2025 • Dept of Computer Science</p>
+</div>
+<div class="flex bg-surface-container p-1 rounded-full">
+<button class="px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-primary shadow-sm transition-all duration-200" id="tab-in-progress-btn" onclick="toggleView('progress')">
+        In Progress
+      </button>
+<button class="px-space-sm py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant transition-all duration-200" id="tab-completed-btn" onclick="toggleView('completed')">
+        Finished
+      </button>
+</div>
+</div>
+<div class="flex flex-col gap-space-md transition-all duration-300" id="view-in-progress">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center">
+<div class="w-full flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Live Generation</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-xs py-0.5 rounded">
+          Est. 12s left
+        </span>
+</div>
+<div class="relative w-36 h-36 my-space-sm flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container stroke-current" cx="60" cy="60" fill="transparent" r="50" stroke-width="10"></circle>
+<circle class="text-primary stroke-current transition-all duration-500 ease-out" cx="60" cy="60" fill="transparent" id="progress-circle" r="50" stroke-dasharray="314.16" stroke-dashoffset="100.5" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">68%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">17 / 25</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Generating Certificates</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+        Compiling vector badges, dynamic credentials, and security seals into individual student certificates.
+      </p>
+<div class="w-full bg-surface-container rounded-full h-2 mt-space-md mb-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-300" style="width: 68%;"></div>
+</div>
+<div class="w-full flex justify-between font-label-sm text-label-sm text-on-surface-variant px-1">
+<span>Batch Size: 25</span>
+<span>Speed: 2.1 cert/sec</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">checklist</span>
+<h4 class="font-label-lg text-label-lg text-on-surface">Execution Sequence</h4>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">
+          Live feed
+        </span>
+</div>
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Template uploaded & validated</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">SVG • Valid</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Names imported (25 participants)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">CSV parsed</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Certificate 1 (Rahul Sharma) generated</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded shrink-0">0.4s</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Certificate 2 (Priya Verma) generated</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded shrink-0">0.3s</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-high animate-pulse">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 animate-spin">sync</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Certificate 3 (Aman Patel) generating...</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold shrink-0">Processing</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0">radio_button_unchecked</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Certificate 4 to 25 queued</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">22 left</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">info</span>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Keep this tab open</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Certificates compile locally to preserve student privacy</p>
+</div>
+</div>
+<button class="px-space-sm py-1.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md shadow-sm shrink-0" onclick="toggleView('completed')">
+        Simulate Done
+      </button>
+</div>
+</div>
+<div class="hidden flex flex-col gap-space-md transition-all duration-300" id="view-completed">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[38px]" style="font-variation-settings: 'FILL' 1;">
+          task_alt
+        </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium bg-surface-container px-space-sm py-1 rounded-full mb-space-xs">
+        Batch Run #8492 Complete
+      </span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">
+        Certificates Generated Successfully!
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-md">
+        25 certificates have been generated in high resolution with embedded digital verification signatures.
+      </p>
+<div class="w-full grid grid-cols-3 gap-space-xs mb-space-md">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">25</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quality</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">300 DPI</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Time</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">14.8s</span>
+</div>
+</div>
+<div class="w-full flex flex-col gap-space-sm">
+<button class="w-full py-3 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg shadow-md flex items-center justify-center gap-space-sm transition-colors duration-150">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+<span>Download All as PDF (ZIP)</span>
+<span class="font-label-sm text-label-sm bg-primary-container/40 px-2 py-0.5 rounded-full ml-1">18.4 MB</span>
+</button>
+<button class="w-full py-3 px-space-md bg-secondary-fixed hover:bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg rounded-lg shadow-sm flex items-center justify-center gap-space-sm transition-colors duration-150">
+<span class="material-symbols-outlined text-[20px]">folder_zip</span>
+<span>Download Images (ZIP)</span>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/80 px-2 py-0.5 rounded-full ml-1">PNG • 42 MB</span>
+</button>
+<button class="w-full py-2.5 px-space-md text-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors duration-150" onclick="document.getElementById('preview-gallery').scrollIntoView({ behavior: 'smooth' })">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span>View Generated Certificates</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm" id="preview-gallery">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">grid_view</span>
+<h4 class="font-label-lg text-label-lg text-on-surface">Gallery Sample (First 3 of 25)</h4>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">
+          Verified
+        </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low">
+<img class="w-20 h-14 rounded object-cover shadow-sm shrink-0" data-alt="Close up landscape framed academic achievement certificate for Rahul Sharma with royal blue geometric ribbons, modern clean typography and gold stamp seal on crisp textured parchment paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxpEOpbyphsWNPIL7ecILTIAMTBf_rDep0n9z3DOX9bIOOdmXBGuQ--lYXOmdNep8KHXKcXAevDunNPvvA_krMDaZAWvE-tRiOs69NRn1zUpLSJCuS6Q2KkMzepBX9m0EZDNkcYKQy0v9qsMjsBDUyd8EdLc7vTVOzb-9lqbSJJNkRVWKZ7aRF6JEZbbe4G6Zbk-1OinBGN2ATe2p-a61zjMCTdIrChZV_GAelmAGjTbjVJooVPSOK"/>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">01_Rahul_Sharma_CS2025.pdf</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Roll: CS-21-042 • 732 KB</p>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low">
+<img class="w-20 h-14 rounded object-cover shadow-sm shrink-0" data-alt="Official campus seminar participation certificate for Priya Verma featuring deep blue elegant borders, digital signature field, and university accreditation badge on clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC60QgFGPQzObz3lFaEJ6u8HP_eAIbUlvb6H3ubo-IyGnngxEUa2EpqeoeltTMapw4XKdXiukoDf2fQls_rZz4UOW9yyjrRofTxHzU_9bzKbCwRc7A6K_-pXK402Gl1W85gnMAtWS0C-snX7AR3wgxm249JdIObTJLP4lnquHBecULGuYAbsnaF7d-n-NNtOYxaTe9B8vtDlonz0z3BdF2tmEC53nc2bXPc1FVrPr8-RJYg2dfPYV2l"/>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">02_Priya_Verma_CS2025.pdf</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Roll: CS-21-089 • 741 KB</p>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low">
+<img class="w-20 h-14 rounded object-cover shadow-sm shrink-0" data-alt="High resolution horizontal certificate template for Aman Patel with official seal, crisp sans-serif text, and modern minimalist border design suitable for academic records" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcW95JOR_TuF-T3uSQl65Ut4XMYUSQwUTwHQzV7euVpLRXnEQxj8XeUyuPy1SSQ_5JRYU4diUtFSHCT9GEYtwRTGXT17kSjyGHCYZ-iZaAN3q1XmdI6RWGyu-5U_pb_Upqw0uoArTKmRNId6SS0ik_DK7IuGIi0vBOcJP8wX0FkkR-vxCHexqt4ejN8XmS4Wu3DWXa1tB20tLPRUORVi8UJ_74D6ewl3gFBlfvG6Q3Jl6piXGEKLly"/>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">03_Aman_Patel_CS2025.pdf</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Roll: CS-21-114 • 729 KB</p>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="w-full mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing 3 of 25 files</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">View all in folder</button>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Generate Another Batch?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Use current template or upload fresh CSV</p>
+</div>
+</div>
+<button class="px-space-md py-2 bg-surface-container-lowest text-primary hover:bg-surface-bright font-label-md text-label-md rounded-lg shadow-sm shrink-0 transition-colors" onclick="toggleView('progress')">
+        New Run
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function toggleView(state) {
+    const inProgressView = document.getElementById('view-in-progress');
+    const completedView = document.getElementById('view-completed');
+    const inProgressBtn = document.getElementById('tab-in-progress-btn');
+    const completedBtn = document.getElementById('tab-completed-btn');
+
+    if (state === 'completed') {
+      inProgressView.classList.add('hidden');
+      completedView.classList.remove('hidden');
+
+      completedBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      completedBtn.classList.remove('text-on-surface-variant');
+
+      inProgressBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      inProgressBtn.classList.add('text-on-surface-variant');
+    } else {
+      completedView.classList.add('hidden');
+      inProgressView.classList.remove('hidden');
+
+      inProgressBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      inProgressBtn.classList.remove('text-on-surface-variant');
+
+      completedBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      completedBtn.classList.add('text-on-surface-variant');
+    }
+  }
+</script></main></body></html>
